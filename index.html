@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Mendoza - Portfolio</title>
+    
+    <link rel="icon" type="image/png" href="https://i.imgur.com/2pXgF04.png">
+    
     <style>
         /* Global Custom Cursor */
         * {
@@ -369,7 +372,7 @@
                 </div>
                 <div class="branding-col">
                     <button class="logo-pic" aria-label="View Graphic Design Logo Fullscreen">
-                        <img src="https://i.imgur.com/ajUghI7.jpeg" alt="Isaac's Graphic Design Logo">
+                        <img src="https://i.imgur.com/1W5tOif.png" alt="Aizakkusnail Logo">
                     </button>
                 </div>
             </header>
@@ -438,9 +441,9 @@
                     <p style="margin-bottom: 15px; color: #aaa;">Click to view the full PDF documents.</p>
                     <div class="collage-grid">
                         
-                        <button class="grid-item" data-pdf="https://ia600805.us.archive.org/17/items/app-5-manuscript-25-knu-001/APP5_Manuscript_25-KNU-001.pdf" aria-label="View Research Paper 1">
+                        <button class="grid-item" data-pdf="SHS-Manuscript.pdf" aria-label="View Research Paper 1">
                             <div class="img-content">
-                                <img src="https://i.imgur.com/OPfRMJb.png" alt="AI Integration Research Paper Cover">
+                                <img src="https://i.imgur.com/dSoFIF8.png" alt="AI Integration Research Paper Cover">
                             </div>
                             <div class="caption">
                                 <span class="strong-text">The Relationship between Artificial Intelligence Integration and its Acceptance among Elderly Residents in Talomo District, Davao City</span>
@@ -576,15 +579,28 @@
                     </div>
                 </div>
                 <div class="visual-item">
-                    <h4>2. As I'm also involved in a band, I do the vocals and play the guitar!</h4>
+                    <h4>2. I'm also involved as a guitarist, vocalist, and producer in an alternative metal band called Kill The Mortician, <a href="https://linktr.ee/killthemorticianband" target="_blank" rel="noopener noreferrer">check us out here!</a></h4>
                     <div class="collage-grid">
-                        <button class="grid-item">
-                            <div class="img-content"><video src="https://i.imgur.com/6E8481I.mp4" autoplay loop muted playsinline></video>
+                        <!-- Custom layout for iframes so they don't break the grid styling -->
+                        <div class="grid-item" style="display: flex;">
+                            <iframe width="100%" height="280" src="https://www.youtube.com/embed/8BkcGYL8mzM?si=T3dCVzZY9-t8tbIh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="flex-grow: 1;"></iframe>
+                        </div>
+
+                        <div class="grid-item" style="display: flex;">
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F909607568376754%2F&show_text=false&width=560&t=0" width="100%" height="280" style="border:none;overflow:hidden;flex-grow: 1;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+
+                        <!-- We can leverage the existing modal iframe logic by hiding the iframe directly in the button! -->
+                        <button class="grid-item" aria-label="Play Work-in-Progress Snippet">
+                            <div class="img-content" style="padding: 2rem; color: #ff00ff; font-weight: bold; font-family: 'Courier New', monospace; background: #111; height: 100%; min-height: 250px;">
+                                Snippet of our work-in-progress track!
+                                <iframe src="https://pillows.su/f/1676010f0791cd1346b2880ef114d676" style="display:none;"></iframe>
                             </div>
                         </button>
-                        <div class="grid-item">
-                            <div class="img-content"><img src="https://i.imgur.com/1QHi1d1.png"></div>
-                        </div>
+
+                        <button class="grid-item" aria-label="View Band Photo">
+                            <div class="img-content"><img src="https://i.imgur.com/1QHi1d1.png" alt="Band Photo"></div>
+                        </button>
                     </div>
                 </div>
                 <div class="visual-item">
@@ -594,7 +610,7 @@
             
             <section class="collage-container" id="memories">
                 <h2>Memory Gallery</h2>
-                <p style="margin-bottom: 15px; color: #aaa;">A collection of my favorite people and my favorite life experiences. Without them, I would not have come as far as where I am right now. <3</p>
+                <p style="margin-bottom: 15px; color: #aaa;">A collection of my favorite people and my favorite life experiences. Without them, I would not have come as far as where I am right now. &lt;3</p>
                 <div class="collage-grid">
                     <button class="grid-item" aria-label="View Memory 1"><div class="img-content"><img src="https://i.imgur.com/ptIIn5O.png" alt="Memory Placeholder 1"></div></button>
                     <button class="grid-item" aria-label="View Memory 2"><div class="img-content"><img src="https://i.imgur.com/nVhPqGZ.png" alt="Memory Placeholder 2"></div></button>
@@ -611,7 +627,8 @@
                     <a href="mailto:gary.isaac.mendoza@proton.me">gary.isaac.mendoza@proton.me</a><br>
                     Davao City, Philippines<br><br>
                     <a href="https://www.linkedin.com/in/isaac-mendoza-7729342b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
-                    <a href="https://www.instagram.com/g.izzc" target="_blank" rel="noopener noreferrer">Instagram</a><br><br>
+                    <a href="https://www.instagram.com/g.izzc" target="_blank" rel="noopener noreferrer">Instagram (g.izzc)</a> |
+                    <a href="https://linktr.ee/killthemorticianband" target="_blank" rel="noopener noreferrer">Kill The Mortician (Band)</a><br><br>
                     <em>* Resume is available upon request.</em>
                 </h4>
             </section>
@@ -715,7 +732,7 @@
             });
         </script>
         
-        <footer style="text-align: center;">&copy; 2026. Made with HTML/CSS/JS and <3. - Isaac</footer>
+        <footer style="text-align: center;">&copy; 2026. Made with HTML/CSS/JS and &lt;3. - Isaac</footer>
     </div>
 </body>
 </html>
